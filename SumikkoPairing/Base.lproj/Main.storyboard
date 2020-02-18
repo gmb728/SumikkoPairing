@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15508"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,159 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SumikkoPairing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arh-oz-Sv2">
+                                <rect key="frame" x="179" y="747" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JI-5V-ZG8">
+                                <rect key="frame" x="179" y="682" width="60" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="au3-8q-eRq">
+                                <rect key="frame" x="20" y="95" width="114" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Sumikko"/>
+                                <connections>
+                                    <action selector="flipSumikko:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jVF-X4-vHy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xs-lc-Vya">
+                                <rect key="frame" x="150" y="95" width="114" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Sumikko"/>
+                                <connections>
+                                    <action selector="flipSumikko:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XTI-Ub-Z2W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJs-Tk-ShE">
+                                <rect key="frame" x="280" y="95" width="114" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Sumikko"/>
+                                <connections>
+                                    <action selector="flipSumikko:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7L9-ky-vbm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlH-n2-Uca">
+                                <rect key="frame" x="20" y="231" width="114" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Sumikko"/>
+                                <connections>
+                                    <action selector="flipSumikko:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u8L-9Z-1Gv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eM4-pg-NZ4">
+                                <rect key="frame" x="20" y="370" width="114" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Sumikko"/>
+                                <connections>
+                                    <action selector="flipSumikko:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kR2-3c-sMz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKQ-WX-ZaY">
+                                <rect key="frame" x="152" y="370" width="114" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Sumikko"/>
+                                <connections>
+                                    <action selector="flipSumikko:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5NK-Tg-qRf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5R-Me-WU8">
+                                <rect key="frame" x="280" y="370" width="114" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Sumikko"/>
+                                <connections>
+                                    <action selector="flipSumikko:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UG5-jr-USS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sma-IK-8LL">
+                                <rect key="frame" x="20" y="507" width="114" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Sumikko"/>
+                                <connections>
+                                    <action selector="flipSumikko:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZCA-KS-Qpf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5I7-1g-UCD">
+                                <rect key="frame" x="152" y="507" width="114" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Sumikko"/>
+                                <connections>
+                                    <action selector="flipSumikko:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Fm-cL-CX3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbK-lX-vfa">
+                                <rect key="frame" x="280" y="507" width="114" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Sumikko"/>
+                                <connections>
+                                    <action selector="flipSumikko:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bu0-55-Bb3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bk-JM-xoe">
+                                <rect key="frame" x="150" y="231" width="114" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Sumikko"/>
+                                <connections>
+                                    <action selector="flipSumikko:" destination="BYZ-38-t0r" eventType="touchUpInside" id="52Z-6g-k44"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csZ-mf-UN8">
+                                <rect key="frame" x="280" y="231" width="114" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Sumikko"/>
+                                <connections>
+                                    <action selector="flipSumikko:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3V5-ZH-2JO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQm-xA-rKp">
+                                <rect key="frame" x="182" y="818" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="restart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUM-xI-kZ9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="movesMade" destination="arh-oz-Sv2" id="d6F-Tx-vn6"/>
+                        <outlet property="restartButton" destination="qQm-xA-rKp" id="v28-LA-feE"/>
+                        <outlet property="timeLabel" destination="3JI-5V-ZG8" id="T28-le-mL4"/>
+                        <outletCollection property="sumikkoButtons" destination="au3-8q-eRq" collectionClass="NSMutableArray" id="Z23-rJ-JnJ"/>
+                        <outletCollection property="sumikkoButtons" destination="9xs-lc-Vya" collectionClass="NSMutableArray" id="qtb-ln-Sqj"/>
+                        <outletCollection property="sumikkoButtons" destination="cJs-Tk-ShE" collectionClass="NSMutableArray" id="Meq-iS-EIB"/>
+                        <outletCollection property="sumikkoButtons" destination="dlH-n2-Uca" collectionClass="NSMutableArray" id="mJL-1d-Y7C"/>
+                        <outletCollection property="sumikkoButtons" destination="2bk-JM-xoe" collectionClass="NSMutableArray" id="JRc-lE-McN"/>
+                        <outletCollection property="sumikkoButtons" destination="csZ-mf-UN8" collectionClass="NSMutableArray" id="JdI-HB-QIh"/>
+                        <outletCollection property="sumikkoButtons" destination="eM4-pg-NZ4" collectionClass="NSMutableArray" id="MRY-7w-hQ4"/>
+                        <outletCollection property="sumikkoButtons" destination="JKQ-WX-ZaY" collectionClass="NSMutableArray" id="l6O-Sr-ELN"/>
+                        <outletCollection property="sumikkoButtons" destination="X5R-Me-WU8" collectionClass="NSMutableArray" id="On2-6X-NOw"/>
+                        <outletCollection property="sumikkoButtons" destination="Sma-IK-8LL" collectionClass="NSMutableArray" id="cHW-Ei-UEf"/>
+                        <outletCollection property="sumikkoButtons" destination="5I7-1g-UCD" collectionClass="NSMutableArray" id="rkS-ec-skC"/>
+                        <outletCollection property="sumikkoButtons" destination="bbK-lX-vfa" collectionClass="NSMutableArray" id="J7g-hQ-To8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="244.92753623188409" y="-37.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Sumikko" width="600" height="600"/>
+    </resources>
 </document>
